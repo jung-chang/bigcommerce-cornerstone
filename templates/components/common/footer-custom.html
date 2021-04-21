@@ -1,0 +1,56 @@
+<footer class="footer-custom" role="contentinfo">
+    <div class="footer-custom-container">
+        <div class="footer-custom-logo">
+            <img src="{{cdn ../theme_settings.footer_logo_image}}">
+        </div>
+        <div class="footer-custom-info">
+            {{#if settings.address}}
+            <div class="contact">
+                <div class="info-container">
+                    <h3 class="footer-custom-title">{{lang 'footer.info'}}</h3>
+                    <address>{{nl2br settings.address}}</address>
+                    {{#if settings.phone_number}}
+                        <strong>{{lang 'footer.call_us' phone_number=settings.phone_number}}</strong>
+                    {{/if}}
+                    <span class="disclaimer">*The statements on this website have not been evaluated by the FDA. However, they are based on traditional medicines. Suns Organic Garden Chinatown © 2010-2020</span>
+                </div>
+            </div>
+            {{/if}}
+            <div class="information">
+                <div class="info-container">
+                    <h3 class="footer-custom-title">Information</h3>
+                    <a href="/">Shipping Policy</a>
+                    <a href="/">Return Policy</a>
+                    <a href="/">Terms of Service</a>
+                    <a href="/">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="learn">
+                <div class="info-container">
+                    <h3 class="footer-custom-title">Learn</h3>
+                    <a href="/">About Us</a>
+                    <a href="/">Blog</a>
+                    <a href="/">FAQ</a>
+                    <a href="/">SOGC Recipes</a>
+                    <a href="/">Docs</a>
+                </div>
+            </div>
+            <div class="hours">
+                <div class="info-container">
+                    <h3 class="footer-custom-title">Hours of Operation</h3>
+                    <span>SUN - THURS: CLOSED</span>
+                    <span>FRI & SAT: 12PM to 4PM</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-custom-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5086.141302653078!2d-73.99725558953685!3d40.712783232310414!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x391c55302de56621!2sSun&#39;s%20Organic%20Garden%20Chinatown!5e0!3m2!1sen!2sus!4v1618968304290!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    {{#if theme_settings.social_icon_placement_bottom '!==' 'bottom_none'}}
+    <div class="footer-custom-socials">
+            <h3 class="footer-custom-title">{{lang 'social.connect'}}</h3>
+            {{> components/common/social-links}}
+    </div>
+    {{/if}}
+</footer>
