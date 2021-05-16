@@ -79,6 +79,16 @@
                     <a href="{{product.brand.url}}"{{#if schema}} itemprop="url"{{/if}}><span{{#if schema}} itemprop="name"{{/if}}>{{product.brand.name}}</span></a>
                 </h2>
             {{/if}}
+
+            <article class="productView-description"{{#if schema}} itemprop="description"{{/if}}>
+                <!-- {{#if theme_settings.show_product_details_tabs}}
+                    {{> components/products/description-tabs}}
+                {{else}}
+                    {{> components/products/description}}
+                {{/if}} -->
+                {{> components/products/description}}
+            </article>
+
             {{#if product.call_for_price}}
                 <p class="productView-price">
                     <span>{{product.call_for_price}}</span>
@@ -251,14 +261,6 @@
         </div>
         {{> components/common/share url=product.url}}
     </section>
-
-    <article class="productView-description"{{#if schema}} itemprop="description"{{/if}}>
-        {{#if theme_settings.show_product_details_tabs}}
-            {{> components/products/description-tabs}}
-        {{else}}
-            {{> components/products/description}}
-        {{/if}}
-    </article>
 </div>
 
 <div id="previewModal" class="modal modal--large" data-reveal>

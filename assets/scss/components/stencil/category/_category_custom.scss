@@ -1,0 +1,10 @@
+.category-header-image {
+  width: 100vw;
+  max-width: none;
+  margin-top: -2.5rem;
+  margin-left: -1.5rem;
+}
+
+.category-header-image + .page-heading {
+  margin: -15% 0 15% 0;
+}
