@@ -1,0 +1,34 @@
+<div class="navPage-subMenu-custom navPage-subMenu navPage-subMenu-horizontal" id="navPages-{{id}}" aria-hidden="true" tabindex="-1">
+    <ul class="navPage-subMenu-list-custom">
+        <div>
+            <li class="navPage-subMenu-item-parent">
+                <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">{{lang 'category.view_all.name' category=name}}</a>
+            </li>
+            {{#each children}}
+                {{#if children}}
+                    <span style="display: none"></span>
+                {{else}}
+                <li class="navPage-subMenu-item-child">
+                    <a class="navPage-subMenu-action navPages-action{{#if is_active}} activePage{{/if}}" href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+            {{/each}}
+        </div>
+        <div class="navPage-subMenu-custom-flyout">
+            {{#each children}}
+                <li>
+                    {{#if children}}
+                        <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}" data-collapsible="navPages-{{id}}">
+                            {{name}}
+                        </a>
+                        {{#each children}}
+                            <a class="navPage-subMenu-flyout-action navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}" data-collapsible="navPages-{{id}}">
+                                {{name}}
+                            </a>
+                        {{/each}}
+                    {{/if}}
+                </li>
+            {{/each}}
+        </div>
+    </ul>
+</div>

@@ -1,0 +1,26 @@
+.navPage-subMenu-custom {
+  width: auto !important;
+
+  .navPage-subMenu-list-custom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+    .navPage-subMenu-custom-flyout {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      li {
+        padding: 0 1.5rem;
+
+        a {
+          display: flex;
+          padding: 0.5rem 1rem;
+          width: max-content;
+        }
+      }
+    }
+  }
+}
