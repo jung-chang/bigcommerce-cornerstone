@@ -1,3 +1,15 @@
+.nav-font {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.navPages {
+  a {
+    @extend .nav-font;
+  }
+}
+
 .navPage-subMenu-custom {
   width: auto !important;
 
@@ -6,11 +18,21 @@
     flex-direction: row;
     flex-wrap: nowrap;
 
+    .navPage-custom {
+      .navPage-subMenu-action {
+        font-weight: bold;
+      }
+    }
+
 
     .navPage-subMenu-custom-flyout {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
+
+      .title-custom {
+        font-weight: bold;
+      }
 
       li {
         padding: 0 1.5rem;

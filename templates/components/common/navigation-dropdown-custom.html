@@ -1,6 +1,6 @@
 <div class="navPage-subMenu-custom navPage-subMenu navPage-subMenu-horizontal" id="navPages-{{id}}" aria-hidden="true" tabindex="-1">
     <ul class="navPage-subMenu-list-custom">
-        <div>
+        <div class="navPage-custom">
             <li class="navPage-subMenu-item-parent">
                 <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">{{lang 'category.view_all.name' category=name}}</a>
             </li>
@@ -18,11 +18,11 @@
             {{#each children}}
                 <li>
                     {{#if children}}
-                        <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}" data-collapsible="navPages-{{id}}">
+                        <a class="title-custom navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">
                             {{name}}
                         </a>
                         {{#each children}}
-                            <a class="navPage-subMenu-flyout-action navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}" data-collapsible="navPages-{{id}}">
+                            <a class="navPage-subMenu-flyout-action navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">
                                 {{name}}
                             </a>
                         {{/each}}
