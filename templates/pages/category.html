@@ -27,10 +27,17 @@ category:
     }}
 {{/if}}
 {{#unless theme_settings.hide_category_page_heading }}
-    <div class="heading-container">
-        <h1 class="page-heading">{{category.name}}</h1>
-        {{{category.description}}}
-    </div>
+    {{#if category.description}}
+        <div class="heading-container description">
+            <h1 class="page-heading">{{category.name}}</h1>
+            {{{category.description}}}
+        </div>
+        {{else}}
+        <div class="heading-container">
+            <h1 class="page-heading">{{category.name}}</h1>
+
+        </div>
+    {{/if}}
     {{{region name="category_below_header"}}}
 {{/unless}}
 <div class="page">
