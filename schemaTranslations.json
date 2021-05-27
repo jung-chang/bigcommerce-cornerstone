@@ -97,6 +97,20 @@
     "uk": "Source Sans Pro",
     "zh": "Source Sans Pro"
   },
+  "i18n.WorkSans": {
+    "default": "Work Sans",
+    "fr": "Work Sans",
+    "it": "Work Sans",
+    "uk": "Work Sans",
+    "zh": "Work Sans"
+  },
+  "i18n.PlayfairDisplay": {
+    "default": "Playfair Display",
+    "fr": "Playfair Display",
+    "it": "Playfair Display",
+    "uk": "Playfair Display",
+    "zh": "Playfair Display"
+  },
   "i18n.BodyTextFontSize": {
     "default": "Body text font size",
     "fr": "Taille de la police du texte du corps",

@@ -64,6 +64,11 @@
             "group": "i18n.SourceSansPro",
             "label": "i18n.SourceSansPro",
             "value": "Google_Source+Sans+Pro_400"
+          },
+          {
+            "group": "i18n.WorkSans",
+            "label": "i18n.WorkSans",
+            "value": "Google_WorkSans_400"
           }
         ]
       },
@@ -138,6 +143,11 @@
         "label": "i18n.HeadingFontFamily",
         "id": "headings-font",
         "options": [
+          {
+            "group": "i18n.PlayfairDisplay",
+            "label": "i18n.PlayfairDisplay",
+            "value": "Google_PlayfairDisplay_400"
+          },
           {
             "group": "i18n.Montserrat",
             "label": "i18n.MontserratLight",
