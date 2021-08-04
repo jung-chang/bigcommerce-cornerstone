@@ -283,16 +283,16 @@
 
 .dropdown--quickSearch {
     background-color: $dropdown--quickSearch-backgroundColor;
-    padding: spacing("single") 0;
+    padding: 0;
     display: none;
+    border-radius: 5px;
 
     @include breakpoint("small") {
-        padding: spacing("double");
+        padding: 1rem;
     }
 
     &.is-open {
         display: block;
-        // scss-lint:disable ImportantRule
         left: 0 !important; // 1
         outline: none;
         right: 0 !important; // 1
@@ -321,6 +321,11 @@
         @include breakpoint("small") {
             padding: spacing("double") 0 0;
         }
+    }
+
+    // Dropdown clips product grid.
+    .quickSearchResults {
+        display: none;
     }
 }
 

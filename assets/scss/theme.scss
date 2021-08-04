@@ -102,3 +102,12 @@ h1, h2, h3, h4, h5, h6 {
 div, span, p, li {
    @extend .work-sans;
 }
+
+// Home page banners
+div[data-test-id="hero-image-title"] p {
+  @extend .playfair-display;
+}
+
+div[data-test-id="hero-image-subtitle"] p {
+  @extend .work-sans;
+}
