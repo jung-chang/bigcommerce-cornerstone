@@ -1,15 +1,18 @@
-// .category-header-image {
-//   @media screen and (min-width: 768px) {
-//     margin-top: -3rem;
-//   }
-// }
+.category-header-image {
+  margin-bottom: -15%;
 
-// .heading-container {
-//   margin: -15% 0 15% 0;
-// }
+  @media screen and (min-width: 768px) {
+    margin-top: -3rem;
+  }
+}
 
-// .heading-container.description{
-//   margin-top: -15%;
-//   padding: 0 10%;
-//   margin-bottom: 50px;
-// }
+.heading-container {
+  display: inline;
+  margin: -15% 0 15% 0;
+}
+
+.heading-container.description {
+  margin-top: -15%;
+  padding: 0 10%;
+  margin-bottom: 50px;
+}
