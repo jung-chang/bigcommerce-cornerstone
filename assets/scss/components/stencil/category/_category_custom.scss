@@ -1,4 +1,4 @@
-.category-header-image {
+.page-heading-with-image img {
   margin-bottom: -15%;
 
   @media screen and (min-width: 768px) {
@@ -6,13 +6,7 @@
   }
 }
 
-.heading-container {
-  display: inline;
-  margin: -15% 0 15% 0;
-}
-
-.heading-container.description {
-  margin-top: -15%;
-  padding: 0 10%;
-  margin-bottom: 50px;
+.page-heading-with-image {
+  display: block;
+  margin-bottom: 15%;
 }

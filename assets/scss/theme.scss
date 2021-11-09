@@ -2,7 +2,6 @@
 // STENCIL
 // =============================================================================
 
-
 // Tools
 // -----------------------------------------------------------------------------
 //
@@ -46,19 +45,16 @@
 @import "settings/stencil/stencil"; // 4
 @import "settings/layouts/layouts"; // 4
 
-
 // Utilities
 // -----------------------------------------------------------------------------
 
 @import "utilities/utilities";
 @import "../../node_modules/@bigcommerce/citadel/dist/utilities/utilities";
 
-
 // Fonts
 // -----------------------------------------------------------------------------
 
 @import "fonts/fonts";
-
 
 // Components
 // -----------------------------------------------------------------------------
@@ -74,7 +70,6 @@
 @import "common/index"; // 3
 @import "components/components"; // 6
 
-
 // Layouts
 // -----------------------------------------------------------------------------
 //
@@ -86,21 +81,28 @@
 
 @import "vendor/jstree/style";
 
-
 .playfair-display {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .work-sans {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @extend .playfair-display;
 }
 
-div, span, p, li {
-   @extend .work-sans;
+div,
+span,
+p,
+li {
+  @extend .work-sans;
 }
 
 // Home page banners
@@ -110,4 +112,9 @@ div[data-test-id="hero-image-title"] p {
 
 div[data-test-id="hero-image-subtitle"] p {
   @extend .work-sans;
+}
+
+// Hero carousel image
+.heroCarousel-slide--first .heroCarousel-image {
+  object-fit: contain !important;
 }
